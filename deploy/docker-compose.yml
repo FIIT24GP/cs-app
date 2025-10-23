@@ -1,0 +1,58 @@
+services:
+  logger:
+    build:
+      context: ../../
+      dockerfile: deploy/docker/logger/Dockerfile
+    container_name: cs-app-logger
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - cs-app-network
+
+  server1:
+    build:
+      context: ../../
+      dockerfile: deploy/docker/server1/Dockerfile
+    container_name: cs-app-server1
+    ports:
+      - "8081:8081"
+    depends_on:
+      - logger
+    networks:
+      - cs-app-network
+
+  server2:
+    build:
+      context: ../../
+      dockerfile: deploy/docker/server2/Dockerfile
+    container_name: cs-app-server2
+    ports:
+      - "8082:8082"
+    depends_on:
+      - logger
+    networks:
+      - cs-app-network
+
+  client:
+    build:
+      context: ../../
+      dockerfile: deploy/docker/client/Dockerfile
+    container_name: cs-app-client
+    ports:
+      - "8080:8080"
+    depends_on:
+      - server1
+      - server2
+    networks:
+      - cs-app-network
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+
+networks:
+  cs-app-network:
+    driver: bridge
+
+volumes:
+  logs:
