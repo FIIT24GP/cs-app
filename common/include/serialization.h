@@ -35,3 +35,4 @@ std::string deserialize_string(const std::string& data, size_t& offset);
 
 } // namespace serialization
 } // namespace cs_app
+

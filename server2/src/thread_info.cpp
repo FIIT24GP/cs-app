@@ -31,3 +31,4 @@ std::vector<protocol::ThreadInfo> ThreadInfo::getThreadInfo() {
 
 } // namespace server2
 } // namespace cs_app
+

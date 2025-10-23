@@ -31,3 +31,4 @@ TEST(UtilsTest, TimestampUtilities) {
     std::string formatted = utils::format_timestamp(timestamp);
     EXPECT_FALSE(formatted.empty());
 }
+

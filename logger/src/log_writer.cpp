@@ -58,3 +58,4 @@ std::string LogWriter::format_log_message(const std::string& source, const std::
 
 } // namespace logger
 } // namespace cs_app
+

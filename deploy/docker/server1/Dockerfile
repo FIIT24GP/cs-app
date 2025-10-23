@@ -26,3 +26,4 @@ EXPOSE 8081
 
 # Запуск сервера
 CMD ["./build/server1/server1"]
+

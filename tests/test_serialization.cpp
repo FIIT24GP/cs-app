@@ -38,3 +38,4 @@ TEST(SerializationTest, ProcessInfoSerialization) {
     EXPECT_EQ(info.memory_usage, deserialized.memory_usage);
     EXPECT_DOUBLE_EQ(info.cpu_usage, deserialized.cpu_usage);
 }
+

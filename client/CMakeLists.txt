@@ -34,3 +34,4 @@ set_target_properties(client PROPERTIES
 install(TARGETS client
     RUNTIME DESTINATION bin
 )
+

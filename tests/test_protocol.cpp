@@ -42,3 +42,4 @@ TEST(ProtocolTest, MessageSerialization) {
     EXPECT_EQ(header.timestamp, deserialized_header.timestamp);
     EXPECT_EQ(data, deserialized_data);
 }
+

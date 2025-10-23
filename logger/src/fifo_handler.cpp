@@ -113,3 +113,4 @@ void FIFOHandler::close() {
 
 } // namespace logger
 } // namespace cs_app
+

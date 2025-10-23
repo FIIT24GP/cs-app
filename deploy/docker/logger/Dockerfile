@@ -26,3 +26,4 @@ RUN mkfifo /app/logs/server1.log.fifo /app/logs/server2.log.fifo
 
 # Запуск логгера
 CMD ["./build/logger/logger"]
+

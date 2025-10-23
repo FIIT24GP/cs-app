@@ -311,3 +311,4 @@ void MainWindow::updateStatus() {
         statusBar_->showMessage("Не подключен", 0);
     }
 }
+

@@ -29,3 +29,4 @@ EXPOSE 8080
 
 # Запуск клиента
 CMD ["./build/client/client"]
+

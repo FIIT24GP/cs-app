@@ -96,3 +96,4 @@ bool deserialize_message(const std::string& data, MessageHeader& header, std::st
 
 } // namespace protocol
 } // namespace cs_app
+

@@ -22,3 +22,4 @@ target_link_libraries(server2 PRIVATE common)
 install(TARGETS server2
     RUNTIME DESTINATION bin
 )
+

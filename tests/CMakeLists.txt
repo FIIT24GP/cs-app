@@ -32,3 +32,4 @@ add_test(NAME CommonTests COMMAND test_common)
 install(TARGETS test_common
     RUNTIME DESTINATION bin
 )
+

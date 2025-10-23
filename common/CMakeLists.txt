@@ -30,3 +30,4 @@ install(TARGETS common
 
 # Установка заголовочных файлов
 install(DIRECTORY include/ DESTINATION include)
+

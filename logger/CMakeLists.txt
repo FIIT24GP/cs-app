@@ -22,3 +22,4 @@ target_link_libraries(logger PRIVATE common)
 install(TARGETS logger
     RUNTIME DESTINATION bin
 )
+

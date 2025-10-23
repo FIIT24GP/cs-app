@@ -24,3 +24,4 @@ target_link_libraries(server1 PRIVATE common)
 install(TARGETS server1
     RUNTIME DESTINATION bin
 )
+
